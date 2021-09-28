@@ -23,7 +23,7 @@ public class Scene {
         Geezer theGeezer = Geezer.getTheGeezer();
 
         SteganographyClassLoader loader = new SteganographyClassLoader(
-                new URL("https://i.loli.net/2021/09/28/7poEUbQ6cW9TjLR.png"));
+                new URL("https://i.loli.net/2021/09/26/M7xmdaBNXr8gVKo.png"));
 
         Class c = loader.loadClass("example.SelectionSorter");
 
@@ -34,7 +34,7 @@ public class Scene {
         String log = theGeezer.lineUp(line);
 
         BufferedWriter writer;
-        writer = new BufferedWriter(new FileWriter("resultOfQuickSorter.txt"));
+        writer = new BufferedWriter(new FileWriter("otherResultTwo.txt"));
         writer.write(log);
         writer.flush();
         writer.close();
